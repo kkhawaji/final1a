@@ -7,7 +7,7 @@
 <author email="support@phonegap.com" href="http://phonegap.com">
     PhoneGap Team
 </author>
-<content src="cameracapture.html" />
+<content src="index.html" />
 <access origin="*" />
 <engine name="android" spec="~6.3.0" />
 <plugin name="cordova-plugin-camera" spec="2.4.1" />
