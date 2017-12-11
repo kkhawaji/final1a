@@ -209,7 +209,7 @@ border-color:none;
 
 <!-- <div data-role="page" id="demo-page"> -->
 
-    <div data-role="header" style="height:60px;">
+    <div data-role="header" ">
         <h1>Payment</h1>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 		 
@@ -246,11 +246,11 @@ border-color:none;
       
 
     <form>
-    <table width="858" border="0">
+    <table  border="0">
 
       	<tr>
-        	<td width="179"><strong>First Name:</strong></td>
-        	<td width="212"><input id="person" name="first_name" type="text" /></td>
+        	<td ><strong>First Name:</strong></td>
+        	<td><input id="person" name="first_name" type="text" /></td>
         </tr>
 
       	<tr>
@@ -264,8 +264,8 @@ border-color:none;
         </tr>
 
       	<tr>
-       		<td><strong>Card Number:</strong></td>
-        	<td><input name="ccnumber" type="text"  maxlength="16" value=></td>
+       		<td> <label for="tel-2"><strong>Card Number:</strong></label></td>
+        	<td><input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value=""></td>
         </tr>
 
       	<tr>
