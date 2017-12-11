@@ -303,6 +303,39 @@ $( document ).ready(function() {
 				</ul>
 			</div>
 		</div>
+		
+		
+		  <script>
+	 var count;
+	
+		$( document ).ready(function() {
+ 
+
+	count =sessionStorage.getItem('count');
+	
+	
+	 
+	if(count){
+	 document.getElementById('bubble').innerHTML=count ;}
+	 else {
+	   count=0;
+	              }
+				  
+				  
+				sessionStorage.setItem('count',count);
+				
+				
+				});
+	 
+  window.onload=function(){
+       
+        var items=  sessionStorage.getItem('items');
+		document.getElementById('cartlist').innerHTML="You've selected "+ items;
+       
+}
+
+        </script>
+		
 
 </body>
 </html>
