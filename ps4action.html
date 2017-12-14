@@ -230,6 +230,11 @@ border-color:none;
 			}
 		}
 	</style> 
+	
+	<style>
+    .rated { background-color: yellow !important; }
+    .rating a { border: 0px !important; }
+</style>
    
 	
 </head>
@@ -299,6 +304,31 @@ border-color:none;
 </div>
 
 	
+	<div class="rating" id="first">
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+</div>
+
+<script>
+$(".rating a").on("vmouseover", function () {
+
+    var id = $(this).parent().attr("id");
+    $("#" + id + ".rating a").each(function (i, v) {
+    $(v).removeClass("rated");
+  });
+
+  $(this).prevAll().each(function (i, v) {
+    $(v).addClass("rated");
+  });
+  $(this).addClass("rated");
+
+  $("#" + id).data("vote", $(this).data("vote"));
+});
+</script>
+	
 	
 	
 	</div><!-- first block-->
@@ -353,6 +383,31 @@ border-color:none;
 <div data-role="popup" id="popupBasic2">
 <p>The game has been added to your shopping cart!</p>
 </div>
+	
+	<div class="rating1" id="second">
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+</div>
+
+<script>
+$(".rating1 a").on("vmouseover", function () {
+
+    var id = $(this).parent().attr("id");
+    $("#" + id + ".rating a").each(function (i, v) {
+    $(v).removeClass("rated");
+  });
+
+  $(this).prevAll().each(function (i, v) {
+    $(v).addClass("rated");
+  });
+  $(this).addClass("rated");
+
+  $("#" + id).data("vote", $(this).data("vote"));
+});
+</script>
 
 	
 	
@@ -439,6 +494,31 @@ border-color:none;
 <div data-role="popup" id="popupBasic3">
 <p>The game has been added to your shopping cart!</p>
 </div>
+	
+	<div class="rating2" id="third">
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+</div>
+
+<script>
+$(".rating2 a").on("vmouseover", function () {
+
+    var id = $(this).parent().attr("id");
+    $("#" + id + ".rating a").each(function (i, v) {
+    $(v).removeClass("rated");
+  });
+
+  $(this).prevAll().each(function (i, v) {
+    $(v).addClass("rated");
+  });
+  $(this).addClass("rated");
+
+  $("#" + id).data("vote", $(this).data("vote"));
+});
+</script>
 
 	
 	
@@ -558,7 +638,7 @@ border-color:none;
   var newp3=100;
  var pre3=75;
 
- var checkedValue = [];
+
  
        function rfun(){
               
